@@ -15,17 +15,17 @@ class _SplashScreenState extends State<SplashScreen> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Color(0xffffffff),
+        backgroundColor: const Color(0xffffffff),
         body: Container(
-          margin: EdgeInsets.all(0),
-          padding: EdgeInsets.all(0),
+          margin: const EdgeInsets.all(0),
+          padding: const EdgeInsets.all(0),
           decoration: BoxDecoration(
-            color: Color(0xff007f68),
+            color: const Color(0xff007f68),
             shape: BoxShape.rectangle,
             borderRadius: BorderRadius.zero,
-            border: Border.all(color: Color(0x4d9e9e9e), width: 1),
+            border: Border.all(color: const Color(0x4d9e9e9e), width: 1),
           ),
-          child: Stack(
+          child: const Stack(
             alignment: Alignment.center,
             children: [
               ///***If you have exported images you must have to copy those images in assets/images directory.
