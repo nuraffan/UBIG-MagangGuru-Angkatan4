@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/page/print.dart';
+import 'package:flutter_application_1/tutor/homepage.dart';
 import 'package:get/get.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'page/splash_screen.dart';
@@ -24,10 +24,11 @@ class _MyAppState extends State<MyApp> {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return const SplashScreen();
         } else {
-          return const GetMaterialApp(
+          return GetMaterialApp(
             title: "App",
             debugShowCheckedModeBanner: false,
-            home: Print(),
+            home: HomePage(),
+            //home: List(),
           );
         }
       },
