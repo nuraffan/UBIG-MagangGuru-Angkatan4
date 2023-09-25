@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/page/print.dart';
 import 'package:get/get.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'page/splash_screen.dart';
@@ -26,7 +27,7 @@ class _MyAppState extends State<MyApp> {
           return const GetMaterialApp(
             title: "App",
             debugShowCheckedModeBanner: false,
-            home: SplashScreen(),
+            home: Print(),
           );
         }
       },
