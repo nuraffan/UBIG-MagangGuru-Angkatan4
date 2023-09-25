@@ -1,7 +1,5 @@
 ///File download from FlutterViz- Drag and drop a tools. For more details visit https://flutterviz.io/
 
-///File download from FlutterViz- Drag and drop a tools. For more details visit https://flutterviz.io/
-
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -17,17 +15,17 @@ class _SplashScreenState extends State<SplashScreen> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: const Color(0xffffffff),
+        backgroundColor: Color(0xffffffff),
         body: Container(
-          margin: const EdgeInsets.all(0),
-          padding: const EdgeInsets.all(0),
+          margin: EdgeInsets.all(0),
+          padding: EdgeInsets.all(0),
           decoration: BoxDecoration(
-            color: const Color(0xff007f68),
+            color: Color(0xff007f68),
             shape: BoxShape.rectangle,
             borderRadius: BorderRadius.zero,
-            border: Border.all(color: const Color(0x4d9e9e9e), width: 1),
+            border: Border.all(color: Color(0x4d9e9e9e), width: 1),
           ),
-          child: const Stack(
+          child: Stack(
             alignment: Alignment.center,
             children: [
               ///***If you have exported images you must have to copy those images in assets/images directory.
@@ -39,15 +37,29 @@ class _SplashScreenState extends State<SplashScreen> {
                 fit: BoxFit.cover,
               ),
               Align(
-                alignment: Alignment(0.0, 1.0),
+                alignment: Alignment(0.0, -0.4),
                 child: Text(
-                  "Latihan 1 Flutter Vis",
+                  "Selamat Datang",
                   textAlign: TextAlign.start,
                   overflow: TextOverflow.clip,
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     fontStyle: FontStyle.normal,
                     fontSize: 22,
+                    color: Color(0xffffffff),
+                  ),
+                ),
+              ),
+              Align(
+                alignment: Alignment(0.0, 0.9),
+                child: Text(
+                  "V 1.0",
+                  textAlign: TextAlign.start,
+                  overflow: TextOverflow.clip,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    fontStyle: FontStyle.normal,
+                    fontSize: 14,
                     color: Color(0xffffffff),
                   ),
                 ),
